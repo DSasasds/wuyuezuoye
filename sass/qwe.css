@@ -76,7 +76,7 @@
 }
 
 #sun2 {
-    width: 70%;
+    width: 80%;
     height: 100%;
     margin: auto;
     text-align: center;
@@ -107,23 +107,22 @@ li {
     flex-wrap: wrap;
 }
 
-#ul11 li {
+#ul11 div {
     height: 50px;
     line-height: 50px;
     font-size: 18px;
 }
 
-#ul21 li {
+#ul21 div {
     width: 214px;
     height: 180px;
-    float: left;
     padding: 25px;
     border-radius: 8px;
     cursor: pointer;
-    position: relative
+    position: relative;
 }
 
-#ul21 li a {
+#ul21 div a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +136,7 @@ li {
     line-height: 24px
 }
 
-#ul21 li a:hover {
+#ul21 div a:hover {
     transform: scale(1.1)
 }
 
