@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: aquamarine;
+        }
+
+        #son1 {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            height: 850px;
+            background-color: #2aae67;
+        }
+
+        #son2 {
+            position: absolute;
+            top: 850px;
+            display: flex;
+            width: 100%;
+            height: 1200px;
+            background-color: rgb(239, 244, 244);
+
+        }
+
+        #son3 {
+            position: absolute;
+            top: 2050px;
+            display: flex;
+            width: 100%;
+            height: 150px;
+ 
+            text-align: center;
+        }
+
+        #sun {
+            width: 400px;
+            height: 45px;
+            position: absolute;
+            top: 2%;
+            right: 2%;
+
+        }
+
+        #sun1 {
+            width: 750px;
+            height: 600px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #sun11 {
+            width: 500px;
+            height: 350px;
+            margin: auto;
+        }
+
+        #sun12 {
+            width: 100%;
+            height: 125px;
+        }
+
+        #sun13 {
+            width: 100%;
+            height: 125px;
+        }
+
+        #sun2 {
+            width: 70%;
+            height: 100%;
+            margin: auto;
+            text-align: center;
+        }
+
+        #ul1 li a ,#ul11 li a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        li {
+            list-style: none;
+
+        }
+    </style>
+    <style>
+        #ul1 li {
+            float: right;
+        }
+
+        #ul1 li span ,#ul11 li span{
+            color: rgb(255, 255, 255);
+        }
+
+        #ul21 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #ul11 li {
+            height: 50px;
+            line-height: 50px;
+            font-size: 18px;
+        }
+
+        #ul21 li {
+            width: 214px;
+            height: 180px;
+            float: left;
+            padding: 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            position: relative
+        }
+
+        #ul21 li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            transition: transform .3s;
+            line-height: 24px
+        }
+
+        #ul21 li a:hover {
+            transform: scale(1.1)
+        }
+
+        #sun3 {
+            width: 800px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div id="son1">
+            <div id="sun">
+                <ul id="ul1">
+                    <li><a href="https://www.wechat.com/zh_TW/" style="margin-left: 20px;">WeChat(EN)</a></li>
+                    <li><a href="https://www.wechat.com/en/"
+                            style="border-right: 2px solid white;line-height: 20px;margin-top: 20px;padding-right: 20px;">WeChat(繁体)</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="sun1">
+                <div id="sun11">
+                    <div id="sun111" style="width: 100%;height: 100px;border-bottom: 1px solid white;"><img src="w1.png"
+                            style="width: 200px;height: 100px; margin-left: 125px;"></div>
+                    <div id="sun112" style="width: 100%;height: 250px;">
+                        <ul id="ul11">
+                            <li><a href="https://www.wechat.com/zh_TW/" style="margin-left: 20px;">微信键盘 0.9.1 for Mac
+                                    灰度版发布</a><span style="float: right;">05-06</span></li>
+                            <li><a href="https://www.wechat.com/zh_TW/" style="margin-left: 20px;">微信 8.0.37 for iOS
+                                    正式版发布</a><span style="float: right;">04-27</span></li>
+                            <li><a href="https://www.wechat.com/zh_TW/" style="margin-left: 20px;">微信 8.0.35 for Android
+                                    正式版发布</a><span style="float: right;">04-20</span></li>
+                            <li><a href="https://www.wechat.com/zh_TW/" style="margin-left: 20px;">更多日志 ></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="sun12">
+                    <ul id="ul12">
+                        <li><a href="https://www.wechat.com/zh_TW/" style="margin-left: 30px; float: left;"><img
+                                    src="w2.png" style="width: 120px; height: 120px;border-radius: 60px;"></a></li>
+                        <li><a href="https://www.wechat.com/zh_TW/" style="margin-left: 20px; float: left;"><img
+                                    src="w3.png" style="width: 120px; height: 120px;border-radius: 60px;"></a></li>
+                        <li><a href="https://www.wechat.com/zh_TW/" style="margin-left: 20px; float: left;"><img
+                                    src="w4.png" style="width: 120px; height: 120px;border-radius: 60px;"></a></li>
+                        <li><a href="https://www.wechat.com/zh_TW/" style="margin-left: 20px; float: left;"><img
+                                    src="w5.png" style="width: 120px; height: 120px;border-radius: 60px;"></a></li>
+                        <li><a href="https://www.wechat.com/zh_TW/" style="margin-left: 20px; float: left;"><img
+                                    src="w6.png" style="width: 120px; height: 120px;border-radius: 60px;"></a></li>
+                    </ul>
+                </div>
+                <div id="sun13">
+                    <ul id="ul13">
+                        <li><a href="https://www.wechat.com/zh_TW/" style="margin-left: 30px; float: left;"><img
+                                    src="w7.png"
+                                    style="width: 210px; height: 80px;border-radius: 10px;margin-top: 20px;"></a></li>
+                        <li><a href="https://www.wechat.com/zh_TW/" style="margin-left: 20px; float: left;"><img
+                                    src="w8.png"
+                                    style="width: 210px; height: 80px;border-radius: 10px;margin-top: 20px;"></a></li>
+                        <li><a href="https://www.wechat.com/zh_TW/" style="margin-left: 20px; float: left;"><img
+                                    src="w9.png"
+                                    style="width: 210px; height: 80px;border-radius: 10px;margin-top: 20px;"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="son2">
+            <div id="sun2">
+                <ul id="ul21">
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w10.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w11.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w12.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w13.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w14.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w15.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w16.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w17.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w18.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w19.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w20.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w21.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w22.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w23.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w24.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w25.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w26.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w27.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                    <li><a href="https://www.wechat.com/zh_TW/"><img src="w28.png"
+                                style="width: 210px; height: 180px;border-radius: 10px;"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="son3">
+            <div id="sun3">
+                <div id="spa">
+                    <span>关于腾讯&nbsp|&nbsp</span>
+                    <span>微信安全&nbsp|&nbsp</span>
+                    <span>服务条款&nbsp|&nbsp</span>
+                    <span>使用规范&nbsp|&nbsp</span>
+                    <span>客服中心&nbsp|&nbsp</span>
+                    <span>隐私保护指引</span><br>
+                    <div style="text-align: center; margin-top: 10px;">备案号:粤B2-20090059</div>
+                    <div style="text-align: center; margin-top: 10px;">Copyright 1998-2023Tencent AllRights Reseverver</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>
