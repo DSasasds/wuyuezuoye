@@ -1,0 +1,331 @@
+#box {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+
+}
+
+#son1 {
+    width: 100%;
+    height: 60px;
+    background-color: #d1cccc;
+}
+
+#son2 {
+    width: 100%;
+    height: 500px;
+
+    position: relative;
+}
+
+#son3 {
+    width: 100%;
+    height: 60px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#son4 {
+    width: 100%;
+    height: 350px;
+
+    margin-bottom: 15px;
+}
+
+#son5 {
+    width: 100%;
+    height: 400px;
+
+    margin-bottom: 15px;
+}
+
+#son6 {
+    width: 100%;
+    height: 700px;
+    margin-bottom: 15px;
+}
+
+#son7 {
+    width: 100%;
+    height: 100px;
+
+}
+
+.layui-nav-item {
+    float: right;
+    height: 100%;
+}
+
+.layui-nav .layui-nav-item a {
+    color: black;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+#son1 .layui-nav {
+    width: 100%;
+    color: #000;
+}
+
+#son2 .mySwiper222 {
+    width: 100%;
+    height: 10%;
+    color: #000;
+    position: absolute;
+
+}
+
+a {
+    color: #000;
+}
+
+.mySwiper222 .layui-bg-white {
+    background-color: #ab9090;
+    color: #000;
+}
+
+.mySwiper222 :nth-child(5) {
+    margin-right: 70px;
+}
+
+#son2 .mySwiper {
+    width: 100%;
+    height: 88%;
+    position: absolute;
+    top: 12%;
+    z-index: 0;
+}
+
+#shuru {
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    top: -15px;
+    right: 100px;
+    margin-left: 60px;
+}
+
+.layui-btn {
+    position: absolute;
+    top: -13px;
+    right: 102px;
+}
+
+#son2 .dingwei {
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    width: 150px;
+    height: 60px;
+    border-radius: 25px;
+    border: 1px solid rgb(160, 159, 159);
+    color: #ffffff;
+    background-color: rgb(32, 147, 109);
+    z-index: 1;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+.layui-bg-white .layui-nav-item {
+    float: none;
+    width: 7.5%;
+    margin-left: 6%;
+}
+
+.swiper {
+    width: 100%;
+    height: 90%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#son3 #ul2 li {
+    float: left;
+    font-size: 20px;
+    width: 10%;
+    margin-top: 2px;
+    text-align: center;
+    margin-left: 4%;
+    padding: 1%;
+    box-shadow: 1px 1px 1px 1px rgb(181, 181, 181);
+}
+
+#son4 #sun51 {
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin-right: 4%;
+}
+
+#sun51 .mySwiper {
+    width: 100%;
+    height: 100%;
+}
+
+#son4 #sun52 {
+    width: 56%;
+    height: 100%;
+    float: left;
+}
+
+#son5 #sun61 {
+    width: 40%;
+    height: 80%;
+    float: left;
+    margin-right: 4%;
+}
+
+
+#son5 #sun62 {
+    width: 56%;
+    height: 100%;
+    float: left;
+}
+
+#sun61 .mySwiper {
+    width: 100%;
+    height: 100%;
+}
+
+/* #son52 .layui-tab .layui-tab-title li:hover{
+            width: 15px;
+        } */
+#ul521 li:nth-child(1),
+#ul522 li:nth-child(1),
+#ul523 li:nth-child(1),
+#ul524 li:nth-child(1) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(204, 203, 203);
+}
+
+#ul521 li,
+#ul522 li,
+#ul523 li,
+#ul524 li,
+#ul621 li,
+#ul622 li,
+#ul623 li,
+#ul624 li {
+    margin: 20px;
+}
+
+#ul611 {
+    width: 100%;
+    height: 21%;
+    background-color: #eee;
+}
+
+#ul611 li {
+    margin: 12px;
+    font-size: 15px;
+
+}
+
+#ul521 li span,
+#ul522 li span,
+#ul523 li span,
+#ul524 li span,
+#ul621 li span,
+#ul622 li span,
+#ul623 li span,
+#ul624 li span {
+    float: right;
+    color: gray;
+}
+
+#son6 #sun71 {
+    width: 68%;
+    height: 100%;
+    float: left;
+    margin-right: 4%;
+}
+
+
+#son6 #sun72 {
+    width: 28%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    float: left;
+}
+
+#sun71 .sun711 {
+    width: 100%;
+    height: 16%;
+}
+
+#sun71 .sun712 {
+    width: 100%;
+    height: 84%;
+}
+
+#sun72 .sun721 {
+    width: 100%;
+    height: 15.3%;
+    border-bottom: 3px solid rgb(205, 194, 194);
+}
+
+#sun72 .sun722 {
+    width: 100%;
+    height: 92%;
+}
+
+.sun711 .son711 {
+    width: 100%;
+    height: 49%;
+    line-height: 50px;
+    font-size: 25px;
+    border-bottom: 3px solid rgb(205, 194, 194);
+}
+
+.sun711 .son712 {
+    width: 100%;
+    height: 49%;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}

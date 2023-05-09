@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo</title>
+    <link rel="stylesheet" href="asd.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js"></script>
+    <!-- 引入 layui.css -->
+    <link rel="stylesheet" href="https://unpkg.com/layui@2.6.8/dist/css/layui.css">
+    <!-- 引入 layui.js -->
+    <script src="https://unpkg.com/layui@2.6.8/dist/layui.js"></script>
+    <link rel="stylesheet" href="../lianjie/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link href="https://unpkg.com/layui@2.8.2/dist/css/layui.css" rel="stylesheet">
+    <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+    <script type="text/javascript">
+        window._AMapSecurityConfig = {
+            securityJsCode: "44c40ba8530f2d7288a1b32c4fb51c52",
+        };
+    </script>
+    <script type="text/javascript"
+        src="https://webapi.amap.com/maps?v=2.0&key=ed094f9eed33ba9f3953de19603db552&plugin=AMap.Driving"></script>
+    <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+    
+</head>
+<body>
+    <div id="box">
+        <div id="son1">
+            <ul class="layui-nav">
+                <li class="layui-nav-item layui-this"><a href="">各地邮政</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">各地邮政</a>
+                </li>
+                <li class="layui-nav-item"><a href="">各地邮政</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">各地邮政</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">菜单1</a></dd>
+                        <dd><a href="">菜单2</a></dd>
+                        <dd><a href="">菜单3</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">各地邮政</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">选项1</a></dd>
+                        <dd class="layui-this"><a href="">选项2</a></dd>
+                        <dd><a href="">选项3</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">各地邮政</a></li>
+            </ul>
+        </div>
+        <div id="son2">
+            <div class="dingwei"><a href="http://www.chinapost.com.cn/html1/folder/181350/3823-1.htm">更多专项</a></div>
+            <div class="mySwiper222">
+                <ul class="layui-nav layui-bg-white" lay-bar="disabled">
+                    <li class="layui-nav-item">
+                        <a href="javascript:;"></a>
+                    </li>
+                    <li class="layui-nav-item"><a href="">蓝色导航</a></li>
+                    <li class="layui-nav-item"><a href="">菜单1</a></li>
+                    <li class="layui-nav-item"><a href="">菜单2</a></li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">更多</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="">选项1</a></dd>
+                            <dd><a href="">选项2</a></dd>
+                            <dd><a href="">选项3</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item"><a href=""></a></li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">
+                            <input id="shuru" type="text" />
+                            <button type="button" class="layui-btn layui-btn-sm">小型按钮</button></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://w.wallhaven.cc/full/ex/wallhaven-ex95zl.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://w.wallhaven.cc/full/kx/wallhaven-kxz3yd.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://w.wallhaven.cc/full/9d/wallhaven-9d2w3x.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://w.wallhaven.cc/full/3l/wallhaven-3lwp8v.png">
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="../lianjie/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    loop: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+
+                });
+            </script>
+        </div>
+        <div id="son3">
+            <ul id="ul2">
+                <li><a href="https://www.11185.cn/web/#/index"><b>邮政业务</b></a></li>
+                <li><a href="https://www.ems.com.cn/"><b>快递业务</b></a></li>
+                <li><a href="https://www.psbc.com/cn/index.html"><b>银行业务</b></a></li>
+                <li><a href="https://www.chinapost-life.com/"><b>保险业务</b></a></li>
+                <li><a href="http://www.cnpsec.com.cn/main/index.html"><b>证券业务</b></a></li>
+                <li><a href="http://www.ule.com/"><b>网上商城</b></a></li>
+            </ul>
+        </div>
+        <div id="son4">
+            <div id="sun51">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://w.wallhaven.cc/full/85/wallhaven-85gjgo.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://w.wallhaven.cc/full/qz/wallhaven-qzj9er.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://w.wallhaven.cc/full/yx/wallhaven-yx52wx.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://w.wallhaven.cc/full/yx/wallhaven-yxeomk.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        spaceBetween: 30,
+                        loop: true,
+                        centeredSlides: true,
+                        autoplay: {
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                    });
+                </script>
+            </div>
+            <div id="sun52">
+                <div class="layui-tab layui-tab-brief">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">标签1</li>
+                        <li>标签2</li>
+                        <li>标签3</li>
+                        <li>标签4</li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                            <ul id="ul521">
+                                <li>
+                                    <b>2023第19届中华全国集邮展览开幕</b><br>
+                                    <a
+                                        href="#">珍邮耀春城,集藏品天下。4月27日,2023第19届中华全国集邮展览在云南昆明滇池国际会展中心隆重开幕。十二届全国政协副主席、中国福利会主...</a>
+                                </li>
+                                <li><a href="#">邮储银行党委举办主题教育读书班</a><span>2023.05.04</span></li>
+                                <li><a href="#">中邮保险价值转型成效显著</a><span>2023.05.04</span></li>
+                                <li><a href="#">邮储银行一季度经营发展稳健开局 “五大差异化增长极”建设成效</a><span>2023.05.04</span></li>
+                                <li><a href="#">中国邮政助力法院审判执行质效提高实现双赢多赢共赢</a><span>2023.05.04</span></li>
+                            </ul>
+                        </div>
+                        <div class="layui-tab-item">
+                            <ul id="ul522">
+                                <li>
+                                    <b>南风吹拂绿意浓</b><br>
+                                    <a href="#">作为合肥市邮政分公司自建的综合便民服务站，南丽湾服务站积极打造共享寄递平台，叠加多种便民服务，主动延展金融服务触角，打通了服务社区...</a>
+                                </li>
+                                <li><a href="#">中国邮政2023年度“烟台—南京”大樱桃专线开通</a><span>2023.05.04</span></li>
+                                <li><a href="#">弘扬五四精神 绽放青春风采</a><span>2023.05.04</span></li>
+                                <li><a href="#">广东邮政探索寄递业务外包集采新路径</a><span>2023.05.04</span></li>
+                                <li><a href="#">长征路上的新长征</a><span>2023.05.04</span></li>
+                            </ul>
+                        </div>
+                        <div class="layui-tab-item">
+                            <ul id="ul523">
+                                <li>
+                                    <b>邮路绵延 山乡巨变</b><br>
+                                    <a
+                                        href="#">“十四五”规划和2035年远景目标纲要提出,实现抵边自然村邮政普遍覆盖。去年11月30日,云南省2207个抵边自然村全部实现邮政服务覆盖,有效...</a>
+                                </li>
+                                <li><a href="#">人民网：李松：“要让邮政快递成为老百姓寄递的最佳选择”...</a><span>2023.05.04</span></li>
+                                <li><a href="#">经济日报：中国邮政贵州龙里分公司邮递员莫富元——一心坚守风雨...</a><span>2023.05.04</span></li>
+                                <li><a href="#">北青网：流动邮局亮相奥体中心区服务五一假期...</a><span>2023.05.04</span></li>
+                                <li><a href="#">杭州日报：这位大学生邮递员捧回了“五一奖章”...</a><span>2023.05.04</span></li>
+                            </ul>
+                        </div>
+                        <div class="layui-tab-item">
+                            <ul id="ul524">
+                                <li>
+                                    <b>“满意邮路”上的“爱心信使”</b><br>
+                                    <a
+                                        href="#">前不久,黑龙江省哈尔滨市邮政分公司平房投递支局揽投员郭庆被评为“第十七届全国职工职业道德建设先进个人”。1930,哈尔滨的夜幕早已降临...</a>
+                                </li>
+                                <li><a href="#">助力春耕 “邮”我守护</a><span>2023.05.04</span></li>
+                                <li><a href="#">里见村的快递，村里“见”</a><span>2023.05.04</span></li>
+                                <li><a href="#">镌刻内心的那抹绿</a><span>2023.05.04</span></li>
+                                <li><a href="#">把奋斗写在人生的坐标上</a><span>2023.05.04</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="son5">
+            <div id="sun61">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <video src="http://v.ctvpost.com/res/ChinaPostVideo/video/23041/2020_2.mp4"
+                                controls="controls" width="100%" height="100%"></video>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <ul id="ul611">
+                    <li><a href="#">人民网：李松：“要让邮政快递成为老百姓寄递的最佳选择”...</a></li>
+                    <li><a href="#">经济日报：中国邮政贵州龙里分公司邮递员莫富元——一心坚守风雨...</a></li>
+                </ul>
+            </div>
+            <div id="sun62">
+                <div class="layui-tab layui-tab-brief">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">标签1</li>
+                        <li>标签2</li>
+                        <li>标签3</li>
+                        <li>标签4</li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                            <ul id="ul621">
+                                <li><a href="#">珍邮耀春城,集藏品天下...</a><span>2023.05.04</span></li>
+                                <li><a href="#">邮储银行党委举办主题教育读书班</a><span>2023.05.04</span></li>
+                                <li><a href="#">中邮保险价值转型成效显著</a><span>2023.05.04</span></li>
+                                <li><a href="#">邮储银行一季度经营发展稳健开局 “五大差异化增长极”建设成效</a><span>2023.05.04</span></li>
+                                <li><a href="#">中国邮政助力法院审判执行质效提高实现双赢多赢共赢</a><span>2023.05.04</span></li>
+                            </ul>
+                        </div>
+                        <div class="layui-tab-item">
+                            <ul id="ul622">
+                                <li><a href="#">作为合肥市邮政分公司自建的综合便民服务站，南丽湾服务站积极打造共享寄递平台...</a><span>2023.05.04</span></li>
+                                <li><a href="#">中国邮政2023年度“烟台—南京”大樱桃专线开通</a><span>2023.05.04</span></li>
+                                <li><a href="#">弘扬五四精神 绽放青春风采</a><span>2023.05.04</span></li>
+                                <li><a href="#">广东邮政探索寄递业务外包集采新路径</a><span>2023.05.04</span></li>
+                                <li><a href="#">长征路上的新长征</a><span>2023.05.04</span></li>
+                            </ul>
+                        </div>
+                        <div class="layui-tab-item">
+                            <ul id="ul623">
+                                <li><a href="#">“十四五”规划和2035年远景目标纲要提出...</a><span>2023.05.04</span></li>
+                                <li><a href="#">人民网：李松：“要让邮政快递成为老百姓寄递的最佳选择”...</a><span>2023.05.04</span></li>
+                                <li><a href="#">经济日报：中国邮政贵州龙里分公司邮递员莫富元——一心坚守风雨...</a><span>2023.05.04</span></li>
+                                <li><a href="#">北青网：流动邮局亮相奥体中心区服务五一假期...</a><span>2023.05.04</span></li>
+                                <li><a href="#">杭州日报：这位大学生邮递员捧回了“五一奖章”...</a><span>2023.05.04</span></li>
+                            </ul>
+                        </div>
+                        <div class="layui-tab-item">
+                            <ul id="ul624">
+                                <li><a href="#">前不久,黑龙江省哈尔滨...</a><span>2023.05.04</span></li>
+                                <li><a href="#">助力春耕 “邮”我守护</a><span>2023.05.04</span></li>
+                                <li><a href="#">里见村的快递，村里“见”</a><span>2023.05.04</span></li>
+                                <li><a href="#">镌刻内心的那抹绿</a><span>2023.05.04</span></li>
+                                <li><a href="#">把奋斗写在人生的坐标上</a><span>2023.05.04</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="son6">
+            <div id="sun71">
+                <div class="sun711">
+                    <div class="son711">邮政网点</div>
+                    <div class="son712">邮政官网营业网点撤销信息</div>
+                </div>
+                <div class="sun712">
+                    <div id="container" class="map" tabindex="0"></div>
+                    <script src="../lianjie/swiper-bundle.min.js"></script>
+                    <script language="javascript"
+                        src="https://webapi.amap.com/maps?v=2.0&key=您申请的key值&plugin=AMap.Scale,AMap.ToolBar"></script>
+                    <script type="text/javascript">
+                        var SOC = 'CHN'
+                        var colors = {};
+                        var GDPSpeed = {
+                            '520000': 10,//贵州
+                            '540000': 10,//西藏
+                            '530000': 8.5,//云南 
+                            '500000': 8.5,//重庆
+                            '360000': 8.5,//江西
+                            '340000': 8.0,//安徽
+                            '510000': 7.5,//四川
+                            '350000': 8.5,//福建
+                            '430000': 8.0,//湖南
+                            '420000': 7.5, //湖北
+                            '410000': 7.5,//河南
+                            '330000': 7.0,//浙江
+                            '640000': 7.5,//宁夏
+                            '650000': 7.0,//新疆
+                            '440000': 7.0,//广东
+                            '370000': 7.0,//山东
+                            '450000': 7.3,//广西
+                            '630000': 7.0,//青海
+                            '320000': 7.0,//江苏
+                            '140000': 6.5,//山西
+                            '460000': 7,// 海南
+                            '310000': 6.5,//上海
+                            '110000': 6.5, // 北京
+                            '130000': 6.5, // 河北
+                            '230000': 6, // 黑龙江
+                            '220000': 6,// 吉林
+                            '210000': 6.5, //辽宁
+                            '150000': 6.5,//内蒙古
+                            '120000': 5,// 天津
+                            '620000': 6,// 甘肃
+                            '610000': 8.5,// 甘肃
+                            '710000': 6.64, //台湾
+                            '810000': 6.0, //香港
+                            '820000': 6.7 //澳门    
+                        }
+                        var getColorByDGP = function (adcode) {
+                            if (!colors[adcode]) {
+                                var gdp = GDPSpeed[adcode];
+                                if (!gdp) {
+                                    colors[adcode] = 'rgb(227,227,227)'
+                                } else {
+                                    var rg = 255 - Math.floor((gdp - 5) / 5 * 255);
+                                    colors[adcode] = 'rgb(' + rg + ',' + rg + ',255)';
+                                }
+                            }
+                            return colors[adcode]
+                        }
+                        var disCountry = new AMap.DistrictLayer.Country({
+                            zIndex: 10,
+                            SOC: 'CHN',
+                            depth: 2,
+                            styles: {
+                                'nation-stroke': '#f09',
+                                'coastline-stroke': [0.85, 0.63, 0.94, 1],
+                                'province-stroke': 'white',
+                                'city-stroke': 'rgba(255,255,255,0.15)',//中国特有字段
+                                'fill': function (props) {//中国特有字段
+                                    return getColorByDGP(props.adcode_pro)
+                                }
+                            }
+                        })
+                        var map = new AMap.Map("container", {
+                            zooms: [4, 8],
+                            center: [104.188488, 34.302032],
+                            showIndoorMap: false,
+                            zoom: 3,
+                            isHotspot: false,
+                            defaultCursor: 'pointer',
+                            touchZoomCenter: 1,
+                            pitch: 0,
+                            layers: [
+                                disCountry,
+                                new AMap.TileLayer.Satellite()
+                            ],
+                            viewMode: '3D',
+                        })
+                        map.addControl(new AMap.Scale());
+                        map.addControl(new AMap.ToolBar({ liteStyle: true }));
+                        document.getElementsByClassName('amap-mcode')[0].innerHTML = '-GS(2022)200号、GS(2021)648号'
+                    </script>
+                </div>
+            </div>
+            <div id="sun72">
+                <div id="son721" style="height: 50%;">
+                    <div class="sun721" style="font-size: 18px;line-height: 50px;">客服热线</div>
+                    <div class="sun722">
+                        <br>
+                        <b style="margin: 30px; font-size: 18px;">邮政业务</b><span
+                            style="color: rgb(42, 165, 108); font-size: 20px">11185</span><br><br>
+                        <b style="margin: 30px; font-size: 18px;">邮储银行</b><span
+                            style="color: rgb(42, 165, 108); font-size: 20px">95580</span><br><br>
+                        <b style="margin: 30px; font-size: 18px;">速递物流</b><span
+                            style="color: rgb(42, 165, 108); font-size: 20px">11183</span><br><br>
+                        <b style="margin: 30px; font-size: 18px;">中邮保险</b><span
+                            style="color: rgb(42, 165, 108); font-size: 20px">4008909999</span><br><br>
+                        <b style="margin: 30px; font-size: 18px;">中邮证券</b><span
+                            style="color: rgb(42, 165, 108); font-size: 20px">4008888005</span><br><br>
+                        <button
+                            style="background-color: rgb(42, 165, 108); color: aliceblue;width: 80%; height: 40px; border-radius: 15px;margin-left: 30px;">举报专区</button>
+                    </div>
+                </div>
+                <div id="son722" style="height: 50%;">
+                    <div class="sun721" style="font-size: 18px;line-height: 50px;">客服热线</div>
+                    <div>
+                        <img style="width: 130px; height: 130px;margin: 10px;"
+                            src="https://picnew9.photophoto.cn/20150714/erweimatupian-02927129_1.jpg">
+                        <img style="width: 130px; height: 130px;margin: 10px;"
+                            src="https://picnew9.photophoto.cn/20150714/erweimatupian-02927129_1.jpg">
+                        <img style="width: 130px; height: 130px;margin: 10px;"
+                            src="https://picnew9.photophoto.cn/20150714/erweimatupian-02927129_1.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="son7">
+            <div id="son81" style="width: 100%; height: 60%; border-bottom: 2px solid rgb(176, 176, 176);">
+                <ul id="ul81">
+                    <li
+                        style="float: left;border-right: 1px solid grey;margin-left: 300px;line-height: 20px;margin-top: 20px; padding-right: 20px;">
+                        <a href="#">助力春耕 “邮”我守护</a>
+                    </li>
+                    <li
+                        style="float: left;border-right: 1px solid grey;margin-left: 30px;line-height: 20px;margin-top: 20px;padding-right: 20px;">
+                        <a href="#">里见村的快递，村里“见”</a>
+                    </li>
+                    <li
+                        style="float: left;border-right: 1px solid grey;margin-left: 30px;line-height: 20px;margin-top: 20px;padding-right: 20px;">
+                        <a href="#">里见村的快递，村里“见”</a>
+                    </li>
+                    <li style="float: left;margin-left: 30px;line-height: 20px;margin-top: 20px;padding-right: 20px;"><a
+                            href="#">里见村的快递，村里“见”</a></li>
+                </ul>
+            </div>
+            <div id="son82" style="width: 100%; height: 40%;">
+                <ul id="ul82">
+                    <li style="float: left;margin-left: 300px;line-height: 20px;margin-top: 15px; padding-right: 20px;">
+                        <a href="#">中国邮政集团有限公司版权所有</a>
+                    </li>
+                    <li style="float: left;margin-left: 30px;line-height: 20px;margin-top: 15px;padding-right: 20px;"><a
+                            href="#">京ICP备15035540号</a></li>
+                    <li style="float: left;margin-left: 30px;line-height: 20px;margin-top: 15px;padding-right: 20px;"><a
+                            href="#">京公网安备110401400185</a></li>
+                    <li style="float: left;margin-left: 30px;line-height: 20px;margin-top: 15px;padding-right: 20px;"><a
+                            href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
